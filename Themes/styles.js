@@ -137,4 +137,120 @@ export const styles = StyleSheet.create({
         fontSize: 14,
         color: '#FFFFFF',
     },
+        // Estilos para las cajas de datos
+        detailBox1: {
+          borderRadius: 12,
+          padding: 20,
+          alignItems: "center",
+          shadowColor: "#000",
+          shadowOffset: { width: 0, height: 4 },
+          shadowOpacity: 0.2,
+          shadowRadius: 5,
+          elevation: 5, // Sombra para Android
+        },
+      
+        boxPh: {
+          backgroundColor: "#FFD700", // Amarillo para pH
+          marginBottom: 15,
+        },
+      
+        boxTds: {
+          backgroundColor: "#1E90FF", // Azul para TDS
+          marginBottom: 15,
+        },
+      
+        boxTemp: {
+          backgroundColor: "#FF4500", // Rojo/Naranja para Temperatura
+          marginBottom: 15,
+        },
+      
+        detailLabel: {
+          fontSize: 20,
+          fontWeight: "bold",
+          color: "#fff",
+          marginBottom: 5,
+        },
+      
+        detailValue: {
+          fontSize: 22,
+          fontWeight: "bold",
+          color: "#fff",
+        },
+      
+        // Estilos del encabezado
+        headerBox: {
+          alignItems: "center",
+          marginBottom: 20,
+        },
+      
+        headerInnerBox: {
+          backgroundColor: "#007AFF",
+          borderWidth: 2,
+          borderColor: "#005BBB",
+          borderRadius: 12,
+          paddingVertical: 15,
+          paddingHorizontal: 30,
+          shadowColor: "#000",
+          shadowOffset: { width: 0, height: 4 },
+          shadowOpacity: 0.3,
+          shadowRadius: 5,
+          elevation: 5, // Para Android
+        },
+      
+        headerTitle: {
+          fontSize: 28,
+          fontWeight: "bold",
+          color: "#fff",
+          textAlign: "center",
+        },
+      
+        // Botón de volver
+        detailsButton1: {
+          backgroundColor: "#333",
+          padding: 15,
+          borderRadius: 10,
+          alignItems: "center",
+          marginTop: 20,
+        },
+      
+        detailsButtonText1: {
+          color: "#fff",
+          fontSize: 18,
+          fontWeight: "bold",
+        },
+      
+        errorText: {
+          color: "red",
+          fontSize: 18,
+          textAlign: "center",
+          marginTop: 20,
+        },
+        chartContainer: {
+            marginTop: 20,
+            backgroundColor: "#fff",
+            borderRadius: 5,
+            padding: 10, // Reducimos un poco el padding
+            shadowColor: "#000",
+            shadowOffset: { width: 0, height: 2 }, // Ajustamos la sombra
+            shadowOpacity: 0.2,
+            shadowRadius: 3,
+            elevation: 2,
+          },
+        
+          chartTitle: {
+            fontSize: 20,
+            fontWeight: "bold",
+            textAlign: "center",
+            marginBottom: 10,
+          },
+        
+          chart: {
+            borderRadius: -10,
+            alignSelf: "center", // Centramos la gráfica
+            padding: -10,
+          },
+      
+      
+      
+          
 });

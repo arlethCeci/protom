@@ -4,7 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { Ionicons } from "@expo/vector-icons";
 import HomeScreen from "../Screens/HomeScreen";
 import DetailsScreen from "../Screens/DetailsScreen";
-import Ciudades from "../Screens/Ciudades";
+import Ciudades from "../Screens/SensorData";
 import Clima from "../Screens/clima";
 
 const Stack = createStackNavigator();

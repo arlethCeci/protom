@@ -7,7 +7,7 @@ import { useNavigationState } from "@react-navigation/native";
 import PropTypes from "prop-types";
 import HomeScreen from "../Screens/HomeScreen";
 import DetailsScreen from "../Screens/DetailsScreen";
-import Ciudades from "../Screens/Ciudades";
+import SensorData from "../Screens/SensorData"; "../Screens/SensorData";
 import Clima from "../Screens/clima";
 
 // Obtener el ancho de la pantalla
@@ -48,11 +48,11 @@ function CustomDrawerContent({ navigation }) {
 
       {/* Botón Ciudades */}
       <TouchableOpacity
-        style={[styles.drawerItem, activeRoute === "Ciudades" && styles.activeItem]}
-        onPress={() => navigation.navigate("Ciudades")}
+        style={[styles.drawerItem, activeRoute === "Sensores" && styles.activeItem]}
+        onPress={() => navigation.navigate("Sensores")}
       >
-        <Ionicons name="location" size={40} color={activeRoute === "Ciudades" ? "#FFD700" : "#FFD700"} />
-        <Text style={[styles.drawerText, activeRoute === "Ciudades" && styles.activeText]}>Ciudades</Text>
+        <Ionicons name="location" size={40} color={activeRoute === "Sensores" ? "#FFD700" : "#FFD700"} />
+        <Text style={[styles.drawerText, activeRoute === "Sensores" && styles.activeText]}>Sensores</Text>
       </TouchableOpacity>
 
       {/* Botón Clima */}
@@ -92,7 +92,7 @@ export default function DrawerNavigator() {
       }}
     >
       <Drawer.Screen name="Inicio" component={HomeStack} />
-      <Drawer.Screen name="Ciudades" component={Ciudades} />
+      <Drawer.Screen name="Sensores" component={SensorData} />
       <Drawer.Screen name="Clima" component={Clima} />
     </Drawer.Navigator>
   );
